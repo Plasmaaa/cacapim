@@ -1,6 +1,7 @@
 .App {
+  margin-left: 600px;
   text-align: center;
-  height: 50vh;
+  height: 30vh;
   width: 25.9vw;
 }
 
@@ -15,15 +16,17 @@
   }
 }
 
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: var(--Dfrad-fond-app, linear-gradient(180deg, #333 0%, #000 35%, #000 100%));
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+  align-content: center;
 }
 
 .App-link {
@@ -38,10 +41,30 @@
     transform: rotate(360deg);
   }
 }
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+  width: 300px; 
+  margin: 150px;
+}
+
 .circle {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%; 
+  border: 2px solid white; 
+  height: 100%;
+  width: 100%;
+}
+
+
+.circle-text {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
