@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={header} className="header" alt="header" />
         <div>
-        <span class="dot"></span>
+        <span class="circle"></span>
 
         </div>
       </header>

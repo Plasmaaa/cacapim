@@ -20,7 +20,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -38,7 +38,7 @@
     transform: rotate(360deg);
   }
 }
-.dot {
+.circle {
   height: 25px;
   width: 25px;
   background-color: #bbb;
