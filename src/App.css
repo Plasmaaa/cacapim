@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  height: 50vh;
+  width: 25.9vw;
 }
 
 .App-logo {
@@ -36,3 +38,10 @@
     transform: rotate(360deg);
   }
 }
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  }
