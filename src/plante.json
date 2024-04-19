@@ -1,0 +1,44 @@
+[
+    {
+      "nom": "Fougère de Boston",
+      "nom_botanique": "Nephrolepis exaltata",
+      "type": "Plante d'intérieur",
+      "description": "La fougère de Boston est une aventurière de la maison. Avec ses feuilles élégantes ressemblant à des plumes, elle aime explorer les coins ombragés, apportant une touche de nature à votre intérieur.",
+      "ecologie": "La fougère de Boston est une excellente plante pour purifier l'air intérieur en absorbant les polluants atmosphériques courants comme le formaldéhyde et le xylène."
+    },
+    {
+      "nom": "Yucca pied d'éléphant",
+      "nom_botanique": "Yucca elephantipes",
+      "type": "Plante d'intérieur",
+      "description": "Le Yucca pied d'éléphant est une plante majestueuse avec son tronc robuste et ses feuilles en forme d'épée. Il apporte une touche tropicale à votre maison tout en étant facile à entretenir.",
+      "ecologie": "Le Yucca pied d'éléphant est une plante résistante qui peut tolérer des conditions de faible luminosité et des périodes d'arrosage espacées. En plus d'ajouter une ambiance exotique à votre espace, il contribue à purifier l'air intérieur en absorbant le dioxyde de carbone et en libérant de l'oxygène."
+    },
+    {
+      "nom": "Monstera deliciosa",
+      "nom_botanique": "Monstera deliciosa",
+      "type": "Plante d'intérieur",
+      "description": "Le Monstera deliciosa, ou 'Lierre du diable', est une plante pleine de mystère avec ses grandes feuilles découpées. Elle apporte une ambiance de jungle à votre espace, vous transportant au cœur de la nature.",
+      "ecologie": "En plus de son aspect tropical attrayant, le Monstera deliciosa contribue à maintenir l'humidité de l'air et à réduire les niveaux de dioxyde de carbone dans votre maison."
+    },
+    {
+      "nom": "Aloe vera",
+      "nom_botanique": "Aloe vera",
+      "type": "Plante succulente",
+      "description": "L'Aloe vera est comme une pharmacie verte dans un pot. Avec ses feuilles charnues remplies de gel, elle est prête à vous soigner en cas de coup de soleil ou de petits bobos cutanés.",
+      "ecologie": "L'Aloe vera est une plante résiliente qui nécessite peu d'eau, ce qui en fait un choix écologique pour les zones où l'eau est rare. De plus, elle est souvent utilisée dans les produits de soins de la peau naturels, réduisant ainsi la dépendance aux produits chimiques."
+    },
+    {
+      "nom": "Sansevieria",
+      "nom_botanique": "Sansevieria",
+      "type": "Plante d'intérieur",
+      "description": "La Sansevieria, surnommée 'Langue de belle-mère', est une plante robuste et résistante. Avec ses feuilles dressées et élégantes, elle apporte une touche de modernité à votre espace de vie.",
+      "ecologie": "La Sansevieria est connue pour sa capacité à purifier l'air intérieur en absorbant les polluants atmosphériques tels que le formaldéhyde, le benzène et le trichloréthylène, ce qui en fait une alliée précieuse pour améliorer la qualité de l'air dans votre maison."
+    },
+    {
+      "nom": "Pothos",
+      "nom_botanique": "Scindapsus",
+      "type": "Plante grimpante",
+      "description": "Le Pothos, également connu sous le nom de 'Scindapsus', est une cascade de verdure qui aime grimper et s'étendre. Avec sa croissance rapide et facile, il transforme rapidement votre maison en un oasis de verdure.",
+      "ecologie": "Le Pothos est une plante très adaptable et peu exigeante en matière de soins. Sa capacité à filtrer les toxines de l'air telles que le formaldéhyde, le xylène et le benzène en fait un excellent choix pour améliorer la qualité de l'air intérieur."
+    }
+  ]

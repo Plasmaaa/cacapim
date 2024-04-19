@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './App.css';
-import footer from './Prouter.svg';
 import logotitre from './logotitre.svg';
 import actu from './Icon Actu.svg';
 import compte from './Icon compte.svg';
@@ -35,9 +34,24 @@ function App() {
       const context = canvasRef.current.getContext('2d');
       context.drawImage(videoRef.current, 0, 0, canvasRef.current.width, canvasRef.current.height);
       const imageDataUrl = canvasRef.current.toDataURL('image/png');
-      // Here you could handle the captured image, e.g., send to server or display somewhere
-      console.log(imageDataUrl); // For debugging purposes
+      sendImageToServer(imageDataUrl);
     }
+  };
+  const sendImageToServer = (imageDataUrl) => {
+    fetch('http://localhost:3000/upload-image', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ imageData: imageDataUrl })
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
   };
 
   const onCircleClick = () => {
@@ -48,6 +62,7 @@ function App() {
       captureImage();
     }
   };
+  
 
   return (
     <div className="App">
@@ -67,14 +82,15 @@ function App() {
           </div>
         </div>
         <canvas ref={canvasRef} className="hidden"></canvas>
-      </header>
-      <div className='footer'>
+        <div className='footer'>
         <img src={actu} className="icon" alt="Actualités" />
         <img src={quizz} className="icon" alt="Quiz" />
         <img src={scan} className="icon" alt="Scan" />
         <img src={pokedex} className="icon" alt="Pokedex" />
         <img src={compte} className="icon" alt="Compte" />
       </div>
+      </header>
+      
     </div>
   );
 }
