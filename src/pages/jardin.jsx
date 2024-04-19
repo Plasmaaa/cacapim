@@ -6,40 +6,35 @@ import compte from '../Icon compte.svg';
 import pokedex from '../Icon pokedex.svg';
 import quizz from '../Icon quiz.svg';
 import scan from '../Icon scan.svg';
+import MyResponsiveWaffle from './grilleJardin'
+import grille from './grille.svg'
 
 function GardenGrid() {
-  // Simuler une grille de jardin
-  const grid = Array.from({ length: 5 }, () =>
-    Array.from({ length: 3 }, () => 'empty')
-  );
 
-  return (
-    <div className="garden-grid">
-      <div className="garden-header">
-      <img src={logotitre} className="logotitre" alt="Logotitre" />
-      </div>
-      <div className="grid-container">
-        {grid.map((row, rowIndex) => (
-          <div key={rowIndex} className="grid-row">
-            {row.map((cell, cellIndex) => (
-              <div key={cellIndex} className={`grid-cell ${cell}`}>
-                {/* Ici, vous pouvez ajouter une logique pour afficher '+' ou l'icône de la plante */}
-                {cell === 'empty' ? '+' : '🌱'}
-              </div>
-            ))}
+
+    return (
+        <div className="garden-grid">
+            <div className="garden-header">
+                <img src={logotitre} className="logotitre" alt="Logotitre" />
+            </div>
+            <div className="grid-container">
+                <div className='waffle'>
+                    <img src={grille} className='grille' alt='jardin' />
+                    <div className='footer'>
+            <img src={actu} className="icon" alt="Actualites" />
+            <img src={quizz} className="icon" alt="quiz" />
+            <img src={scan} className="icon" alt="Scan" />
+            <img src={pokedex} className="icon" alt="pokedex" />
+            <img src={compte} className="icon" alt="compte" />
           </div>
-        ))}
-        <div className='footer'>
-        <img src={actu} className="icon" alt="Actualités" />
-        <img src={quizz} className="icon" alt="Quiz" />
-        <img src={scan} className="icon" alt="Scan" />
-        <img src={pokedex} className="icon" alt="Pokedex" />
-        <img src={compte} className="icon" alt="Compte" />
-      </div>
-      </div>
-      
-    </div>
-  );
+                </div>
+                
+            </div>
+            
+           
+
+        </div>
+    );
 }
 
 export default GardenGrid;

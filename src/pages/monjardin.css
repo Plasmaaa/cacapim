@@ -1,0 +1,220 @@
+.App {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(102, 168, 101); /* Couleur verte comme arrière-plan */
+  }
+  
+  .rectangle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rectangle {
+    width: 375px; 
+    height: 812px;
+    background-color: rgb(102, 168, 101); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .App-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .logotitre{
+  margin-top: 35px;
+  }
+  
+  .text_1{
+    font-size: 24px
+  }
+  
+  .text_2{
+    color: #fff;
+    font-size: 27px;
+    font-weight:bolder ;
+    right: 80px;
+    top: 13px;
+    position: relative;
+  
+  }
+  
+  .bouton {
+    width: 100%;
+    position: relative;
+    height: 35px;
+    text-align: center;
+    font-size: 24px;
+    color: #66a865;
+    font-family: Outfit;
+  }
+  .monJardinWrapper,
+  .monHerbierWrapper {
+      position: absolute;
+      height: 120%;
+      width: 40%;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 15px;
+      box-sizing: border-box;
+  }
+  
+  .monJardinWrapper {
+    top: -400%;
+    right: 53.44%;
+    left: 8%;
+    background-color: #ffff;
+    font-size: 20px;
+    color: #088705;
+    font-weight: bold ;
+    border: none;
+  }
+  
+  .monHerbierWrapper {
+    top: -400%;
+    right: 8%;
+    left: 53.44%;
+    background-color: #088705;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold ;
+    border: none;
+  }
+  
+  .marron-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -230px;
+    background-color: #644c2c;
+    height: 363px;
+  }
+  
+  .footer {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .Palmier{
+    width: 19%;
+    position: relative;
+    border-radius: 360px;
+    max-width: 100%;
+    overflow: hidden;
+    height: 70px;
+    object-fit: cover;
+    right: 125px;
+  }
+  
+  .text_3{
+    position: relative;
+    right: 125px;
+    color: #fff;
+    font-size: 10px;
+    bottom: 10px;
+    font-weight: bold ;
+  }
+  .vigne_vierge{
+    width: 19%;
+    position: relative;
+    border-radius: 360px;
+    max-width: 100%;
+    overflow: hidden;
+    height: 70px;
+    object-fit: cover;
+    right: 125px;
+  
+  }
+  
+  .platane{
+    width: 19%;
+    position: relative;
+    border-radius: 360px;
+    max-width: 100%;
+    overflow: hidden;
+    height: 70px;
+    object-fit: cover;
+    top: -238px;
+    right: -5px;
+  }
+  
+  .text_4{
+    position: relative;
+    right: 125px;
+    color: #fff;
+    font-size: 10px;
+    bottom: 250px;
+    font-weight: bold ;
+    right: -5px;
+  }
+  
+  
+  .Pissenlit{
+    width: 19%;
+    position: relative;
+    border-radius: 360px;
+    max-width: 100%;
+    overflow: hidden;
+    height: 70px;
+    object-fit: cover;
+    top: -238px;
+    right: -5px;
+  }
+  
+  .Lerable{
+    width: 19%;
+    position: relative;
+    border-radius: 360px;
+    max-width: 100%;
+    overflow: hidden;
+    height: 70px;
+    object-fit: cover;
+    top: -475px;
+    right: -120px;
+  
+  }
+  
+  .text_5{
+    position: relative;
+    color: #ffffff;
+    font-weight: bold ;
+    top: -488px;
+    font-size: 10px;
+    right: -120px;
+  }
+  
+  
+  .paquerette{
+    width: 19%;
+    position: relative;
+    border-radius: 360px;
+    max-width: 100%;
+    overflow: hidden;
+    height: 70px;
+    object-fit: cover;
+    top: -475px;
+    right: -120px;
+  
+  }

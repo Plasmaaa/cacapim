@@ -76,21 +76,27 @@ function App() {
         <div className="circle-container" onClick={onCircleClick}>
           <div className="circle">
             <div className="circle-text">
-              Clique ici pour scanner
+              
+              
             </div>
             {}
             <video ref={videoRef} className={`video-feed ${isCameraOn ? '' : 'hidden'}`} autoPlay playsInline></video>
           </div>
         </div>
-        <canvas ref={canvasRef} className="hidden"></canvas>
+       
         <div className='footer'>
         <img src={actu} className="icon" alt="Actualités" />
         <img src={quizz} className="icon" alt="Quiz" />
         <img src={scan} className="icon" alt="Scan" />
+        <a href="http://localhost:3000/jardin">
         <img src={pokedex} className="icon" alt="Pokedex" />
         <img src={compte} className="icon" alt="Compte" />
+        </a>
       </div>
       </header>
+      <a href='http://localhost:3000/decouvrir'>
+      <canvas ref={canvasRef} className="hidden"></canvas>
+      </a>
       
     </div>
   );
