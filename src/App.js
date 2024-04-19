@@ -12,7 +12,7 @@ function App() {
   const canvasRef = useRef(null);
   const [isCameraOn, setIsCameraOn] = useState(false);
 
-  // Start the camera as soon as the component mounts
+  
   useEffect(() => {
     startCamera();
   }, []);
@@ -38,10 +38,11 @@ function App() {
     }
   };
   const sendImageToServer = (imageDataUrl) => {
-    fetch('http://localhost:3000/upload-image', {
+    fetch('http://localhost:3001/scan', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': '1'
       },
       body: JSON.stringify({ imageData: imageDataUrl })
     })
@@ -57,7 +58,7 @@ function App() {
   const onCircleClick = () => {
     if (!isCameraOn) {
       startCamera();
-      setIsCameraOn(true); // Set the camera state as on
+      setIsCameraOn(true); 
     } else {
       captureImage();
     }
@@ -77,7 +78,7 @@ function App() {
             <div className="circle-text">
               Clique ici pour scanner
             </div>
-            {/* Only show video when camera is on */}
+            {}
             <video ref={videoRef} className={`video-feed ${isCameraOn ? '' : 'hidden'}`} autoPlay playsInline></video>
           </div>
         </div>

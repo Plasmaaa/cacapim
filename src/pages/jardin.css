@@ -1,0 +1,81 @@
+.garden-grid {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #d2e7d0;
+    color: #333;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribue le contenu sur l'axe vertical */
+  }
+  .garden-header {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .status-bar {
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    background: #66A865;
+  }
+  
+  
+  .grid-container {
+    flex-grow: 1; /* Prend l'espace restant */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .grid-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .grid-cell {
+    width: 10vw; /* Ajustez selon votre design, basé sur la largeur de la vue */
+    height: 10vw; /* Ajustez selon votre design, basé sur la largeur de la vue */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
+    font-size: 5vw; /* Ajustez la taille des icônes '+' si nécessaire */
+  }
+  
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #ffffffbb; /* semi-transparent */
+  }
+  
+  .nav-icon {
+    font-size: 6vw; /* Ajustez selon la taille de votre icône */
+    cursor: pointer;
+  }
+  
+  /* En cas de besoin de media queries pour ajuster la taille des éléments sur les grands écrans */
+  @media (min-width: 600px) {
+    .grid-cell {
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+    }
+  
+    .nav-icon {
+      font-size: 24px;
+    }
+  }
+  
+  .footer {
+    margin-top: 50 px;
+  }
